@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [development]
+  push:
+    branches: [development, main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # No linter or test suite is configured yet; this is a basic sanity check
+      # that the source at least compiles.
+      - name: Compile check
+        run: python -m py_compile server.py
