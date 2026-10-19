@@ -1,4 +1,4 @@
-# ZenvairoCloud-MCP
+# cloud-mcp
 
 MCP server that exposes a Nextcloud instance (files, calendars, address books,
 and Talk) as tools for an MCP-compatible AI agent.
