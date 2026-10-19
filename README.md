@@ -1,4 +1,4 @@
-# ZenvairoAnalytics-MCP
+# analytics-mcp
 
 MCP server that exposes Umami analytics data (websites, pageviews, metrics, active
 visitors) as tools, over streamable-HTTP.
